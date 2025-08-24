@@ -1,227 +1,387 @@
-// // // JavaScript Fundamentals - Part 1
-// // // We'll write our code here!
+// // // // JavaScript Fundamentals - Part 1
+// // // // We'll write our code here!
 
-// // let js = "amazing";
-// // console.log(40 + 8 + 23 - 10);
-// // console.log(js);
-
-
-// // console.log("===VARIABLES ===");
-// // let firstName = "Jonas";
-// // console.log(firstName);
-
-// // let age = 30;
-// // console.log(age);
-// // age = 50;
-// // console.log(age);
-
-// // const birthYear = 1991;
-// // console.log(birthYear);
-
-// // const PI = 3.1415;
-// // console.log(PI);
-
-// // var job = "programmer";
-// // job = "teacher";
-// // console.log(job);
-
-// // const country = "Philippines";
-// // const language = "Filipino";
-
-// // age = 25;
-// // age = 26;
-
-// // console.log("=== DATA TYPES ===");
-
-// // // Number
-// // let id = 12345;
-// // console.log(id);
-// // console.log(typeof id);
-
-// // // String
-// // let lastName = "Doe";
-// // console.log(lastName);
-// // console.log(typeof lastName);
-
-// // // Boolean
-// // let javaScriptIsFun = true;
-// // console.log(javaScriptIsFun);
-// // console.log(typeof javaScriptIsFun);
-
-// // // undefined
-// // let year;
-// // console.log(year);
-// // console.log(typeof year);
-
-// // let dynamicVariable = 40;
-// // console.log(dynamicVariable, typeof dynamicVariable);
-
-// // // change to a string
-// // dynamicVariable = "I am now a string";
-// // console.log(dynamicVariable, typeof dynamicVariable);
-
-// // // change to a boolean
-// // dynamicVariable = true;
-// // console.log(dynamicVariable, typeof dynamicVariable);
+// // // let js = "amazing";
+// // // console.log(40 + 8 + 23 - 10);
+// // // console.log(js);
 
 
-// // Basic Operators - Math
-// console.log("==== MATH OPERATORS ===");
+// // // console.log("===VARIABLES ===");
+// // // let firstName = "Jonas";
+// // // console.log(firstName);
 
-// const now = 2037;
-// const ageJonas = now - 1991;
-// const ageSarah = now - 2018;
-// console.log(ageJonas, ageSarah);
+// // // let age = 30;
+// // // console.log(age);
+// // // age = 50;
+// // // console.log(age);
 
-// // More math operators
-// console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+// // // const birthYear = 1991;
+// // // console.log(birthYear);
 
-// console.log("Math operations");
-// console.log("Addition: ", 10 + 5);
-// console.log("Subtraction: ", 20 - 8);
-// console.log("Multiplication: ", 4 * 7);
-// console.log("Division: ", 15 / 3);
-// console.log("Exponentiation: ", 2 ** 3); // 3 * 3 * 3
+// // // const PI = 3.1415;
+// // // console.log(PI);
 
-// // Math with Strings!
+// // // var job = "programmer";
+// // // job = "teacher";
+// // // console.log(job);
+
+// // // const country = "Philippines";
+// // // const language = "Filipino";
+
+// // // age = 25;
+// // // age = 26;
+
+// // // console.log("=== DATA TYPES ===");
+
+// // // // Number
+// // // let id = 12345;
+// // // console.log(id);
+// // // console.log(typeof id);
+
+// // // // String
+// // // let lastName = "Doe";
+// // // console.log(lastName);
+// // // console.log(typeof lastName);
+
+// // // // Boolean
+// // // let javaScriptIsFun = true;
+// // // console.log(javaScriptIsFun);
+// // // console.log(typeof javaScriptIsFun);
+
+// // // // undefined
+// // // let year;
+// // // console.log(year);
+// // // console.log(typeof year);
+
+// // // let dynamicVariable = 40;
+// // // console.log(dynamicVariable, typeof dynamicVariable);
+
+// // // // change to a string
+// // // dynamicVariable = "I am now a string";
+// // // console.log(dynamicVariable, typeof dynamicVariable);
+
+// // // // change to a boolean
+// // // dynamicVariable = true;
+// // // console.log(dynamicVariable, typeof dynamicVariable);
+
+
+// // // Basic Operators - Math
+// // console.log("==== MATH OPERATORS ===");
+
+// // const now = 2037;
+// // const ageJonas = now - 1991;
+// // const ageSarah = now - 2018;
+// // console.log(ageJonas, ageSarah);
+
+// // // More math operators
+// // console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+
+// // console.log("Math operations");
+// // console.log("Addition: ", 10 + 5);
+// // console.log("Subtraction: ", 20 - 8);
+// // console.log("Multiplication: ", 4 * 7);
+// // console.log("Division: ", 15 / 3);
+// // console.log("Exponentiation: ", 2 ** 3); // 3 * 3 * 3
+
+// // // Math with Strings!
+// // const firstName = "Jonas";
+// // const lastName = "Doe";
+// // console.log(firstName + " " + lastName);
+
+// // console.log("Hello " + "World" + "!");
+
+// // // Assignment Operators
+// // console.log("=== ASSIGNMENT OPERATORS ===");
+
+// // let x = 10 + 5;
+// // console.log("x starts as:", x);
+
+// // x += 10;
+// // console.log("x starts as:", x);
+
+// // x *= 4;
+// // console.log("x starts as:", x); 
+
+// // x /= 2;
+// // console.log("x starts as:", x); 
+
+// // x++;
+// // console.log("x starts as:", x); 
+
+// // x--;
+// // console.log("x starts as:", x);
+
+// // // comparison operators
+// // console.log("=== COMPARISON OPERATORS ===");
+
+// // console.log("Age comparison: ");
+// // console.log(ageJonas > ageSarah); 
+// // console.log(ageSarah >= 18);
+// // console.log(ageJonas < 30);
+
+// // console.log("Number comparison: ");
+// // console.log(25 > 10);
+// // console.log(15 < 10);
+// // console.log(18 >= 18);
+// // console.log(16 <= 15);
+
+// // const isFullAge = ageSarah >=18;
+// // console.log("Sarah is an adult:", isFullAge);
+
+// // console.log("Complex comparison");
+// // console.log(now - 1991 > now - 2018);
+
+// // let z, y;
+// // z = y = 25 - 10 - 5;
+// // console.log(z, y);
+
+// // const averageAge = (ageJonas + ageSarah) / 2;
+// // console.log(ageJonas, ageSarah, averageAge);
+
+// // // Coding Challenge #1
+// // // TEST DATA 1
+// // const massMark = 78;
+// // const heightMark = 1.69;
+// // const massJohn = 92;
+// // const heightJohn = 1.95;
+
+// // const bmiMark = massMark / heightMark ** 2;
+// // const bmiJohn = massJohn / heightJohn ** 2;
+
+// // const markHigherBMI = bmiMark > bmiJohn;
+
+// // console.log("=== BMI Calculation Test Data 1 ===");
+// // console.log("Mark's BMI: ", bmiMark);
+// // console.log("John's BMI: ", bmiJohn);
+// // console.log("Who has higher BMI? ", markHigherBMI);
+
+// // //TEST DATA 2
+// // const massMark2 = 95;
+// // const heightMark2 = 1.88;
+// // const massJohn2 = 85;
+// // const heightJohn2 = 1.76;
+
+// // const bmiMark2 = massMark2 / heightMark2 ** 2;
+// // const bmiJohn2 = massJohn2 / heightJohn2 ** 2;
+
+// // const markHigherBMI2 = bmiMark2 > bmiJohn2;
+
+// // console.log("=== BMI Calculation Test Data 2 ===");
+// // console.log("Mark's BMI: ", bmiMark2);
+// // console.log("John's BMI: ", bmiJohn2);
+// // console.log("Who has higher BMI? ", markHigherBMI2);
+
 // const firstName = "Jonas";
-// const lastName = "Doe";
-// console.log(firstName + " " + lastName);
+// const job = "teacher";
+// const birthYear = 1991;
+// const year = 2037;
 
-// console.log("Hello " + "World" + "!");
+// const jonas = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+// console.log(jonas);
 
-// // Assignment Operators
-// console.log("=== ASSIGNMENT OPERATORS ===");
+// const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+// console.log(jonasNew); 
 
-// let x = 10 + 5;
-// console.log("x starts as:", x);
+// console.log(`I'm ${2037 - 1991} years old`);
+// console.log(`Math works here: ${2 + 3} equals five`);
 
-// x += 10;
-// console.log("x starts as:", x);
 
-// x *= 4;
-// console.log("x starts as:", x); 
+// if (age > 18) {
+//     console.log(`Sarah can start a driving license`);
 
-// x /= 2;
-// console.log("x starts as:", x); 
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`Sarah is too young. Wait another ${yearsLeft} years : )`);
+// }
 
-// x++;
-// console.log("x starts as:", x); 
 
-// x--;
-// console.log("x starts as:", x);
+// console.log(Boolean(0)); //falsy value
+// console.log(Boolean(undefined)); // falsy value
+// console.log(Boolean("Jonas")); //truthy value
+// console.log(Boolean({})); //truthy value
+// console.log(Boolean("")); //falsy value
 
-// // comparison operators
-// console.log("=== COMPARISON OPERATORS ===");
 
-// console.log("Age comparison: ");
-// console.log(ageJonas > ageSarah); 
-// console.log(ageSarah >= 18);
-// console.log(ageJonas < 30);
+// ////////////////////////////////////
+// // Coding Challenge #2
 
-// console.log("Number comparison: ");
-// console.log(25 > 10);
-// console.log(15 < 10);
-// console.log(18 >= 18);
-// console.log(16 <= 15);
-
-// const isFullAge = ageSarah >=18;
-// console.log("Sarah is an adult:", isFullAge);
-
-// console.log("Complex comparison");
-// console.log(now - 1991 > now - 2018);
-
-// let z, y;
-// z = y = 25 - 10 - 5;
-// console.log(z, y);
-
-// const averageAge = (ageJonas + ageSarah) / 2;
-// console.log(ageJonas, ageSarah, averageAge);
-
-// // Coding Challenge #1
-// // TEST DATA 1
+// // Reuse your BMI calculation from Challenge #1
 // const massMark = 78;
 // const heightMark = 1.69;
 // const massJohn = 92;
 // const heightJohn = 1.95;
 
-// const bmiMark = massMark / heightMark ** 2;
-// const bmiJohn = massJohn / heightJohn ** 2;
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// console.log(BMIMark, BMIJohn);
 
-// const markHigherBMI = bmiMark > bmiJohn;
+// // Your if/else statement here:
+// if (BMIMark > BMIJohn) {
+//    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+// } else{
+//    console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+// }
 
-// console.log("=== BMI Calculation Test Data 1 ===");
-// console.log("Mark's BMI: ", bmiMark);
-// console.log("John's BMI: ", bmiJohn);
-// console.log("Who has higher BMI? ", markHigherBMI);
+// // Compare BMIs and create intelligent messages
 
-// //TEST DATA 2
-// const massMark2 = 95;
-// const heightMark2 = 1.88;
-// const massJohn2 = 85;
-// const heightJohn2 = 1.76;
+// // Use template literals for beautiful output
 
-// const bmiMark2 = massMark2 / heightMark2 ** 2;
-// const bmiJohn2 = massJohn2 / heightJohn2 ** 2;
+//Type conversion
+// const inputYear = "1991";
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18);
 
-// const markHigherBMI2 = bmiMark2 > bmiJohn2;
+// console.log(Number('Jonas'));
+// console.log(typeof NaN);
 
-// console.log("=== BMI Calculation Test Data 2 ===");
-// console.log("Mark's BMI: ", bmiMark2);
-// console.log("John's BMI: ", bmiJohn2);
-// console.log("Who has higher BMI? ", markHigherBMI2);
+// console.log(String(23), 23);
+// console.log(typeof String(23));
 
-const firstName = "Jonas";
-const job = "teacher";
-const birthYear = 1991;
-const year = 2037;
+// // Automatic Type Coercion
+// console.log(`I am ` + 23 + ` years old`);
+// console.log(`23` - `10` - 3);
+// console.log(`23` / `2`);
+// console.log(`23` * `2`);
 
-const jonas = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
-console.log(jonas);
+// // Reminder: '+' sign converts numbers to string, and '-, /, *' convert strings to numbers
+// let n = `1` + 1;
+// console.log(n);
 
-const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
-console.log(jonasNew); 
+// n = n - 1;
+// console.log(n);
 
-console.log(`I'm ${2037 - 1991} years old`);
-console.log(`Math works here: ${2 + 3} equals five`);
+//type conversion = explicit/manual (recommend)
+//type coercion = implicit/automatic (not recommend)
+
+// Equality - strict
+
+// const age = `18`;
+// if (age === 18) console.log(`You just became an adult (strict)`);
+// if (age == 18) console.log(`You just became an adult :D (loose)`);
+
+// console.log(`18` === 18);
+// console.log(`18` == 18); // coercion happens
+// console.log(18 === 18);
+// Reminder: triple equal signs checks for VALUE and TYPE, double equal signs checks for value only
+
+// // why == can be dangerous
+// console.log(`0` == 0);
+// console.log(0 == false);
+// console.log(`0` == false);
+// console.log(null == undefined); // special case
+
+// console.log(` ` == 0);
+// console.log(`   ` == 0);
+
+// // best practice
+// const favourite = Number(prompt(`What's your favorite number?`));
+// console.log(typeof favourite);
+
+// if (favourite === 23) {
+//     console.log(`Cool! 23 is an amazing number!`);
+// } else if (favourite === 7) {
+//     console.log(`7 is also a cool number`);
+// } else if (favourite === 9) {
+//     console.log(`9 is also a cool number`);
+// } else {
+//     console
+// }
+
+// if(favourite !== 23) console.log(`Why not 23?`);
+
+// // Logical Operators
+
+// const hasDriversLicense = false; // A
+// const hasGoodVision = false; // B
+
+// console.log(`AND OPERATOR: ${hasDriversLicense && hasGoodVision}`);
+// console.log(`OR OPERATOR: ${hasDriversLicense || hasGoodVision}`);
+// console.log(`NOT OPERATOR: ${!hasDriversLicense}`);
+
+// // Reminder: && operator must meet all the conditions, || operator - one of them must be true, ! it will be flipped
+
+// const isTired = true; // C
+// console.log(hasDriversLicense && hasGoodVision && !isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log(`Aiken is able to drive!`);
+// } else {
+//     console.log(`Someone else should drive...`);
+// } 
 
 
-if (age > 18) {
-    console.log(`Sarah can start a driving license`);
+// More complex scenarios
+// age = 20;
+// const hasPermission = true;
+// const hasExperience = true
 
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`Sarah is too young. Wait another ${yearsLeft} years : )`);
-}
+// // Can drive if: (age >= 18 OR has permission) AND has experience
+// if ((age >= 18 || hasPermission) && hasExperience) {
+//   console.log(`Approved to drive`);
+// } else {
+//   console.log(`Not approved to drive`)
+// }
+
+// // Test with different values
+// console.log(
+//     "Age 20, permission true, experience false: ",
+//     (age >= 18 || hasPermission) && hasExperience
+// );
 
 
-console.log(Boolean(0)); //falsy value
-console.log(Boolean(undefined)); // falsy value
-console.log(Boolean("Jonas")); //truthy value
-console.log(Boolean({})); //truthy value
-console.log(Boolean("")); //falsy value
+
+// Create a club entry system with these rules:
+// Entry allowed if: (age >= 21 AND hasID) OR isVIP
+
+// const age = 19; // Try different values
+// const hasID = false; // Try different values
+// const isVIP = false; // Try different values
+
+// // Your logic here:
+// if ((age >= 21 && hasID) || isVIP) {
+//     console.log(`Welcome to the club!`);
+// } else {
+//     console.log('Sorry, you cannot enter.');
+// }
+
+
+
+////////////////
+// The Conditional (Ternary) Operator
+// const age = 17;
+
+// //basic ternary: condition ? valueifTrue : valueifFalse
+// const drink = age >= 18 ? `wine` : `water`;
+// console.log(drink);
+
+// // if else statement
+// let drink2;
+// if (age >= 18) {
+//     drink2 = `wine`;
+
+// } else {
+//     drink2= `water`;
+// }
+// console.log(drink2);
+
+// console.log(`I like to drink ${age >= 18 ? `wine` : `water`}`);
 
 
 ////////////////////////////////////
-// Coding Challenge #2
+// Coding Challenge #4
 
-// Reuse your BMI calculation from Challenge #1
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+const bill = 430; // Test with 275, 40, and 430
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(BMIMark, BMIJohn);
+// Step 1: Create the tip calculation using ternary operator
+// Rule: 15% if between 50-300, otherwise 20%
+// Hint: bill >= 50 && bill <= 300
 
-// Your if/else statement here:
-if (BMIMark > BMIJohn) {
-   console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
-} else{
-   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
-}
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;// Your ternary operator here
 
-// Compare BMIs and create intelligent messages
+// Step 2: Create beautiful output with template literal
+console.log(`Bill ${bill}: "The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 
-// Use template literals for beautiful output
+// Expected outputs:
+// Bill 275: "The bill was 275, the tip was 41.25, and the total value 316.25"
+// Bill 40:  "The bill was 40, the tip was 8, and the total value 48"
+// Bill 430: "The bill was 430, the tip was 86, and the total value 516"
