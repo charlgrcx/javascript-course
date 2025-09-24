@@ -25,6 +25,10 @@ const diceEl = document.querySelector('.dice');
 
 const btnRollEl = document.querySelector('.btn--roll');
 
+const btnHoldEl = document.querySelector('.btn--hold');
+
+const btnNewEl = document.querySelector('.btn--new');
+
 // game initialization function
 
 const init = function () {
@@ -49,6 +53,14 @@ const init = function () {
     current1El.textContent = 0;
 
     diceEl.classList.add('hidden');
+
+    player0El.classList.remove('player--winner');
+
+    player1El.classList.remove('player--winner');
+
+    player0El.classList.add('player--active');
+
+    player1El.classList.remove('player--active');
 };
 
 init();
@@ -68,10 +80,51 @@ btnRollEl.addEventListener('click', function () {
             document.getElementById(`current--${activePlayer}`).textContent = currentScore;
         } else {
             // handle rolling 1
-            currentScore = 0;
+           switchPlayer();
+            console.log;ongamepadconnected('Active Player:', activePlayer);
 
-            document.getElementById(`current--${activePlayer}`).textContent = 0;
-
+            console.log(
+                'Player 0 active:',
+                player0El.classList.contains('player--active')
+            );
+            console.log(
+                'Player 1 active:',
+                player1El.classList.contains('player--active')
+            );
+            
         }
     }
 });
+
+const switchPlayer = function () {
+    document.getElementById(`current--${activePlayer}`).textContent = 0;
+    currentScore = 0;
+
+    activePlayer = activePlayer === 0 ? 1 : 0;
+
+    player0El.classList.toggle('player--active');
+    player1El.classList.toggle('player--active');
+};
+
+btnHoldEl.addEventListener('click', function () {
+    if (playing && currentScore > 0) {
+        scores[activePlayer] += currentScore;
+        document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
+        if (scores[activePlayer] >= 100) {
+            playing = false;
+            diceEl.classList.add('hidden');
+            
+            document
+            .querySelector(`.player--${activePlayer}`)
+            .classList.add(`player--winner`);
+
+            document
+            .querySelector(`.player--${activePlayer}`)
+            .classList.remove(`player--active`);
+        } else {
+            switchPlayer();
+        }
+    }
+});
+
+btnNewEl.addEventListener('click', init);
